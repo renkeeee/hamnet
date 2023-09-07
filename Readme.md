@@ -1,5 +1,6 @@
 
-![Icon](Resources/icon.png)
+
+<img src="Resources/icon.png" width="128">
 
 # Hamnet
 
