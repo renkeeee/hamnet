@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RecordListFilterVC" customModule="hamnet" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="TJS-Ah-tDR" id="rta-3Z-wLi"/>
+                <outlet property="filterOptionsBtn" destination="2UK-QH-gF2" id="bd1-Rg-JJm"/>
+                <outlet property="searchField" destination="6sc-6d-4YR" id="FhJ-Co-FX9"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="849" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2UK-QH-gF2">
+                    <rect key="frame" x="5" y="4" width="100" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="8Wm-Dq-DOP"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="recessed" bezelStyle="recessed" imagePosition="left" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" inset="2" id="SmH-wx-KVw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system" size="12"/>
+                        <menu key="menu" id="d2z-gx-MVJ"/>
+                    </popUpButtonCell>
+                </popUpButton>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sc-6d-4YR">
+                    <rect key="frame" x="110" y="3" width="669" height="22"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="search text (press ESC to exit, Command+F to focus)" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" sendsWholeSearchString="YES" id="3Yz-8c-MWe">
+                        <font key="font" metaFont="system" size="12"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                </searchField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-Ah-tDR">
+                    <rect key="frame" x="784" y="5" width="60" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="YgC-wX-Vns"/>
+                        <constraint firstAttribute="width" constant="60" id="ja3-jO-TIj"/>
+                    </constraints>
+                    <buttonCell key="cell" type="inline" title="Cancel" bezelStyle="inline" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="89v-HR-Jeq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystemBold"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TJS-Ah-tDR" firstAttribute="leading" secondItem="6sc-6d-4YR" secondAttribute="trailing" constant="5" id="5Z5-Fx-idW"/>
+                <constraint firstItem="6sc-6d-4YR" firstAttribute="leading" secondItem="2UK-QH-gF2" secondAttribute="trailing" constant="5" id="ApK-u6-YFB"/>
+                <constraint firstItem="2UK-QH-gF2" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="Olj-Bo-h0T"/>
+                <constraint firstAttribute="trailing" secondItem="TJS-Ah-tDR" secondAttribute="trailing" constant="5" id="RFM-rA-73p"/>
+                <constraint firstItem="6sc-6d-4YR" firstAttribute="leading" secondItem="2UK-QH-gF2" secondAttribute="trailing" constant="5" id="T59-w6-Zt8"/>
+                <constraint firstItem="6sc-6d-4YR" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="Ywv-ko-MdB"/>
+                <constraint firstItem="TJS-Ah-tDR" firstAttribute="leading" secondItem="6sc-6d-4YR" secondAttribute="trailing" constant="5" id="lBr-hX-JfZ"/>
+                <constraint firstItem="2UK-QH-gF2" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="ntD-oE-2C6"/>
+                <constraint firstItem="TJS-Ah-tDR" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="o2B-pC-2OY"/>
+            </constraints>
+            <point key="canvasLocation" x="143.5" y="2"/>
+        </customView>
+    </objects>
+</document>
